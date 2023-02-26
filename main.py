@@ -18,6 +18,7 @@ def judge(n):
             return False
     return True
 
+
 def factor(n):
     a = 1
     for i in range(2, n // 2 + 1):
@@ -29,9 +30,11 @@ def factor(n):
     b = n // a
     return a, b
 
+
 @bot.event
 async def on_ready():
     print(f"{bot.user} is online")
+
 
 @bot.event
 async def on_reaction_add(reaction, user):
@@ -58,10 +61,10 @@ async def on_reaction_add(reaction, user):
 
 @bot.command()
 async def start(ctx, min=100, max=200):
-    n = random.randint(min,max)
+    n = random.randint(min, max)
     message = await ctx.send(n)
     await message.add_reaction("⭕")
     await message.add_reaction("❌")
 
 
-bot.run("UR_TOKEN")
+bot.run('OTU4OTQxMjM2NzQ2NjY2MTA0.GtJ1XQ.K2oqEAEUt9evsOk7TajxKbmFV8osCDhGKqEuaw')
