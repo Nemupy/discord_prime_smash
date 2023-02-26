@@ -67,4 +67,4 @@ async def start(ctx, min=100, max=200):
     await message.add_reaction("❌")
 
 
-bot.run('OTU4OTQxMjM2NzQ2NjY2MTA0.GtJ1XQ.K2oqEAEUt9evsOk7TajxKbmFV8osCDhGKqEuaw')
+bot.run("UR_TOKEN")
